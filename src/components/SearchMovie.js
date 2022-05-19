@@ -12,10 +12,10 @@ export default function SearchMovie(){
     //console.log('submmiting');
   
     
-  const url =`https://api.themoviedb.org/3/search/movie?api_key=bc6c6d479cb8166b0fa55facea70e9b2&query=${query}&include_adult=false`;
+  const SEARCH_API ="https://api.themoviedb.org/3/search/movie?&api_key=bc6c6d479cb8166b0fa55facea70e9b2&query=";
 
   try {
-    const res = await fetch(url);
+    const res = await fetch(SEARCH_API + query);
     const data = await res.json();
     console.log(data.results)
     setMovies(data.results)
@@ -25,9 +25,9 @@ export default function SearchMovie(){
 
 }
   return (
-    <>
+    <> 
         <form className='form' onSubmit={searchMovies}>
-            <label className='label' htmlFor='query'>movie name</label>
+            <label className='label' htmlFor='query'>title</label>
             <input className='input' type='text' name='query' 
                   placeholder='e.g. Leon' 
                   value={query}
@@ -37,7 +37,7 @@ export default function SearchMovie(){
         </form>
         <div className='card-list'>
           {movies.filter(movie => movie.poster_path).map(movie =>(
-            <MovieCard MOVIE = {movie } key={movie.id}/>
+            <MovieCard movie = {movie} key={movie.id}/>
           )
             )}
         </div>
