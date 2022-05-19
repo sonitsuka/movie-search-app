@@ -99,12 +99,16 @@ small{
 }
 
 .card--title{
-  margin-bottom: .5rem;
+  margin: .5rem 0 .2rem;
 }
 
 .card--img{
   margin: 0 auto;
   display: block;
+}
+
+.card--description{
+  font-family: 'Times New Roman', Times, serif;
 }
  
 @media (min-width:786px){
