@@ -90,6 +90,23 @@ small{
   background-color: var(--first-color-dark);
 }
 
+.card{
+  padding:2rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px var(--stoke-color);
+  margin: 1rem  0 1.5rem;
+  background-color: var(--text-color-light);
+}
+
+.card--title{
+  margin-bottom: .5rem;
+}
+
+.card--img{
+  margin: 0 auto;
+  display: block;
+}
+ 
 @media (min-width:786px){
   .form{
     grid-template-columns: auto 1fr auto;
