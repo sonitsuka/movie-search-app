@@ -1,13 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Yuji+Syuku&display=swap');
+
+:root{
+  --bg-color:#f8f5f2;
+  --first-color: #078080;
+  --first-color-second: #f45d48;
+  --title-color: #232323;
+  --text-color: #222525;
+  --text-color-light: #fffffe;
+  --stoke-color:#232323;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Cinzel', -apple-system, BlinkMacSystemFont, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p{
+  font-size: 1.2rem;
+}
+
+small{
+  font-size: 0.8rem;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* centerise */
+  max-width: 960px;
+  padding: 2rem;
+}
+
+.title{
+  text-align: center;
+  text-transform: uppercase
 }
