@@ -79,6 +79,10 @@ a{
   margin-bottom: 1rem;
 }
 
+.input:focus{
+  outline: 0;
+}
+
 .button{
   background-color: var(--first-color);
   color: var(--text-color-light);
